@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2399160396.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="/img/—Pngtree—pizza location logo_8902732.png" />
     <title>EAT PIZZA</title>
   </head>
   <body>
-    <header class="head">
-      <div class="nav header-scrolled">
-        <a href="index.html">
-          <img
-            class="logo"
-            src="/img//—Pngtree—pizza location logo_8902732.png"
-            alt="logo"
-            style="max-width: 100px; padding-left: 15px"
-          />
-        </a>
-        <ul class="info">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">ELEMENT</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
-    </header>
+    <nav id="nav-bar">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="/img//—Pngtree—pizza location logo_8902732.png"
+          alt="logo"
+          style="max-width: 100px; padding-left: 15px"
+        />
+      </a>
+      <ul class="info">
+        <li><a id="nav-link" href="#">HOME</a></li>
+        <li><a id="nav-link" href="#">MENU</a></li>
+        <li><a id="nav-link" href="#">CONTACT</a></li>
+      </ul>
+      <button class="btn">Order Now</button>
+    </nav>
+
     <div class="captions">
-      <h6 class="caption2">Slice To Meet You</h6>
+      <h6 class="caption1">Slice To Meet You</h6>
       <div class="divider"></div>
-      <h3 class="caption1">Every Meal Would Be Better If It Were Pizza.</h3>
+      <h3 class="caption2">Every Meal Would Be Better If It Were Pizza.</h3>
       <div class="divider"></div>
     </div>
     <div class="click">
-      <button>Click! To Eat</button>
+      <button class="btn">Click! To Eat</button>
     </div>
+
     <div class="mid">
       <section>
         <h1>
@@ -54,7 +55,7 @@
           elit, sed do eiusmod temp or incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim.
         </p>
-        <button>Eat Me</button>
+        <button class="btn">Eat Me</button>
       </section>
       <img
         class="mid-img"
@@ -72,7 +73,9 @@
         <div>
           <img class="pizza" src="/img/1a.jpg" alt="" />
 
-          <h1><a href="" style="color: black">Pizza Vegetarian</a></h1>
+          <h1>
+            <a id="pizza-name" href="" style="color: black">Pizza Vegetarian</a>
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor
@@ -81,7 +84,9 @@
         <div>
           <img class="pizza" src="/img/2a.jpg" alt="" />
 
-          <h1><a href="" style="color: black">Pizza Pepperoni</a></h1>
+          <h1>
+            <a id="pizza-name" href="" style="color: black">Pizza Pepperoni</a>
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor
@@ -90,7 +95,11 @@
         <div>
           <img class="pizza" src="/img/3a.jpg " />
 
-          <h1><a href="" style="color: black">Pizza Viande Hachée</a></h1>
+          <h1>
+            <a id="pizza-name" href="" style="color: black"
+              >Pizza Viande Hachée</a
+            >
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor
@@ -98,7 +107,9 @@
         </div>
         <div>
           <img class="pizza" src="/img/4a.jpg" alt="" />
-          <h1><a href="" style="color: black">Pizza Cheese </a></h1>
+          <h1>
+            <a id="pizza-name" href="" style="color: black">Pizza Cheese </a>
+          </h1>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -107,5 +118,49 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="ft-center">
+        <h3>EAT PIZZA</h3>
+
+        <p>
+          This Website Created By <br /><br /><strong>Oussama Adame</strong>
+          <br />
+          <br />
+          for any further information please do not hesitate to contact me
+        </p>
+
+        <ul class="user-contact">
+          <li>
+            <a
+              target="_blank"
+              class="user-link"
+              href="https://www.facebook.com/oussama.adams.75/"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://twitter.com/oussama_adame"
+              class="user-link"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#" class="user-link"
+              ><i class="fa-solid fa-g"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/tighei"
+              class="user-link"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
