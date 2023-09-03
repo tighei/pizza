@@ -1,20 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@font-face {
+  font-family: 'open_sans';
+  src: url(/Open_Sans\,Sevillana\,Signika_Negative/Open_Sans/font1.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: 'sevillana';
+  src: url(/Open_Sans\,Sevillana\,Signika_Negative/Sevillana/font2.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: 'signika';
+  src: url(/Open_Sans\,Sevillana\,Signika_Negative/Signika_Negative/font3.ttf)
+    format('truetype');
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url(/Open_Sans\,Sevillana\,Signika_Negative/Pacifico/font4.ttf)
+    format('truetype');
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  --primary-color:#ffd622;
+  --primary-color: #ffd622;
 }
 
 body {
   background-image: url(/img/pizza-pepperoni-on-the-table.jpg);
   background-position: bottom;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'open_sans', sans-serif;
   max-height: 100vh;
 }
 
@@ -34,7 +51,7 @@ body {
 }
 a {
   text-decoration: none;
-  color:var(--primary-color);
+  color: var(--primary-color);
   transition: all 0.8s ease-in-out;
 }
 .logo:hover {
@@ -45,7 +62,7 @@ a {
   list-style: none;
   gap: 30px;
   align-items: center;
-  margin-left:90px;
+  margin-left: 90px;
 }
 .captions {
   color: rgb(255, 255, 255);
@@ -77,13 +94,12 @@ a {
 }
 
 nav > .btn {
-  margin: 0px 25px 0px ;
+  margin: 0px 25px 0px;
 }
 .btn {
   color: #ff0000ab;
   background-color: var(--primary-color);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  'Open Sans' , sans-serif;
   font-size: large;
   border: none;
   border-radius: 20px;
@@ -95,25 +111,24 @@ nav > .btn {
 
 button:hover {
   transform: scale(1.1);
-  color:var(--primary-color);
+  color: var(--primary-color);
   background-color: rgba(44, 44, 44, 0.4);
 }
 
 .mid {
-
   display: flex;
   justify-content: space-between;
   gap: 60px;
   align-items: center;
   padding: 330px 10px 30px;
   margin: 0 auto;
-  max-width: 70vw;}
-#des-title{
-  font-size: 35px;
-line-height: 1.5;
-font-family: 'Pacifico', cursive;
+  max-width: 70vw;
 }
-
+#des-title {
+  font-size: 35px;
+  line-height: 1.5;
+ font-family: 'pacifico';
+}
 
 .mid > section > button {
   margin-bottom: 0px;
@@ -126,8 +141,7 @@ font-family: 'Pacifico', cursive;
 
 .menu {
   background-color: rgba(250, 235, 215, 0.753);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, sans-serif
 }
 
 .menu-name {
