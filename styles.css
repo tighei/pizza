@@ -41,11 +41,12 @@ body {
   align-items: center;
   position: fixed;
   width: 100vw;
+  height: 13vh;
   z-index: 1;
   top: 0;
   left: 0;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 17px;
   background-color: rgba(36, 36, 36, 0.61);
   border-bottom: 3px ridge #ff0000a6;
 }
@@ -118,30 +119,42 @@ button:hover {
 .mid {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 60px;
-  align-items: center;
-  padding: 330px 10px 30px;
+  padding: 340px 0px 0px;
   margin: 0 auto;
   max-width: 70vw;
+  font-weight: 500;
+  line-height: 2.2;
 }
 #des-title {
   font-size: 35px;
   line-height: 1.5;
  font-family: 'pacifico';
 }
-
-.mid > section > button {
-  margin-bottom: 0px;
+.mid>section{
+display: flex;
+flex-direction: column;
+gap: 30px;
 }
+
 .mid-img {
   height: 350px;
-  min-width: 400px;
-  border-radius: 20px;
+  width: auto;
+  border-radius:15px;
 }
-
+hr{
+  width: 80vw;
+  margin: 80px auto;
+  height: 5px;
+  background-color: #eee;
+  border: 0;
+}
 .menu {
-  background-color: rgba(250, 235, 215, 0.753);
-  font-family: system-ui, sans-serif
+  /* background-color: rgba(250, 235, 215, 0.753); */
+  background-color: #cdd6d03b;
+  font-family: system-ui, sans-serif;
+  padding: 25px 20px;
 }
 
 .menu-name {
@@ -150,25 +163,28 @@ button:hover {
   text-decoration: underline;
 }
 .pizza {
-  height: auto;
   position: relative;
-  width: 20rem;
+  width: 15rem;
   border-radius: 50%;
   transition: 0.2s ease-in-out;
 }
 
 .pizza:hover {
-  transform: scale(1.05) rotate(100deg);
+  transform: scale(1.05) rotate(40deg);
 }
 .menu-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  gap: 20px;
+  gap: 10px;
 }
-
+.pizza_card{
+  border-radius: 20px;
+  padding: 10px;
+  height: 70vh;
+  /* box-shadow: 2px 5px 5px var( --primary-color); */
+}
 ::-webkit-scrollbar {
   width: 10px;
   background-color: rgba(228, 228, 228, 0.801);

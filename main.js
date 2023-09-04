@@ -1,14 +1,17 @@
-const btnup = document.querySelector('.GoTop');
+const btnUp = document.querySelector('.GoTop');
+const nav = document.getElementById('nav-bar');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY !== 0) {
-    btnup.style.display = 'block';
+    btnUp.style.display = 'block';
+    nav.style.backgroundColor = 'rgba(36, 36, 36,0.85)';
   } else {
-    btnup.style.display = 'none';
+    btnUp.style.display = 'none';
+    nav.style.backgroundColor = 'rgba(36, 36, 36,0.6)';
   }
 });
 
-btnup.addEventListener('click', () => {
-  btnup.style.display = 'none';
+btnUp.addEventListener('click', () => {
+  btnUp.style.display = 'none';
   window.scrollTo(0, 0);
 });
