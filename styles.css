@@ -89,9 +89,10 @@ a {
 }
 
 .click {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+position: relative;
+width: 200px;
+margin: 0 auto;
+margin-top: 70px;
 }
 
 nav > .btn {
@@ -105,13 +106,12 @@ nav > .btn {
   border: none;
   border-radius: 20px;
   padding: 15px 25px;
-  margin: 60px 0px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-  transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.05);
   color: var(--primary-color);
   background-color: rgba(44, 44, 44, 0.4);
 }
@@ -122,7 +122,7 @@ button:hover {
   align-items: flex-start;
   gap: 60px;
   padding: 340px 0px 0px;
-  margin: 0 auto;
+  margin: 10px auto 0px;
   max-width: 70vw;
   font-weight: 500;
   line-height: 2.2;
@@ -147,11 +147,11 @@ hr{
   width: 80vw;
   margin: 80px auto;
   height: 5px;
-  background-color: #eee;
+  background-color: #ff0000ab;
   border: 0;
 }
-.menu {
-  /* background-color: rgba(250, 235, 215, 0.753); */
+#menu {
+ 
   background-color: #cdd6d03b;
   font-family: system-ui, sans-serif;
   padding: 25px 20px;
@@ -166,12 +166,13 @@ hr{
   position: relative;
   width: 15rem;
   border-radius: 50%;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;  
 }
 
 .pizza:hover {
   transform: scale(1.05) rotate(40deg);
-}
+} 
+
 .menu-flex {
   display: flex;
   justify-content: center;
@@ -183,7 +184,12 @@ hr{
   border-radius: 20px;
   padding: 10px;
   height: 70vh;
-  /* box-shadow: 2px 5px 5px var( --primary-color); */
+  width: 100vw;
+/*   box-shadow: 3px 6px 4px #e2e2e2; */
+box-shadow: 3px -6px 10px #e2e2e2, 
+-3px 6px 5px  #e2e2e2, 
+3px 6px 5px  #e2e2e2, 
+-3px -6px 5px  #e2e2e2;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -228,4 +234,19 @@ footer {
   right: 20px;
   bottom: 15px;
   display: none;
+}
+#card-btns{
+  margin-top: 20px;  
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}
+#card-btns>input{
+  border-radius: 12px;
+}
+
+
+.pizza-des{
+  height: 100px;
 }
