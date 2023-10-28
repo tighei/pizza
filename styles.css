@@ -121,8 +121,8 @@ nav > .btn {
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
-  padding: 340px 0px 0px;
-  margin: 10px auto 0px;
+  padding: 340px 0px 10px;
+  margin: 10px auto   ;
   max-width: 70vw;
   font-weight: 500;
   line-height: 2.2;
@@ -143,13 +143,7 @@ gap: 30px;
   width: auto;
   border-radius:15px;
 }
-hr{
-  width: 80vw;
-  margin: 80px auto;
-  height: 5px;
-  background-color: #ff0000ab;
-  border: 0;
-}
+
 #menu {
  
   background-color: #cdd6d03b;
@@ -228,6 +222,7 @@ footer {
 .takeup {
   font-size: 3.2em;
   color: var(--primary-color);
+  cursor: pointer;
 }
 .GoTop {
   position: fixed;
@@ -249,4 +244,14 @@ footer {
 
 .pizza-des{
   height: 100px;
+}
+.hidden{
+  display: none;
+
+}
+.wlcm{
+  font-family: 'pacifico';
+  font-weight: 200;
+  text-align: center;
+  margin: 10px 0px 20px; 
 }
