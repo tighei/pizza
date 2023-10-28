@@ -89,10 +89,9 @@ a {
 }
 
 .click {
-position: relative;
-width: 200px;
-margin: 50px auto;
-
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
 }
 
 nav > .btn {
@@ -101,7 +100,7 @@ nav > .btn {
 .btn {
   color: #ff0000ab;
   background-color: var(--primary-color);
-  font-family:  'Open Sans' , sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: large;
   border: none;
   border-radius: 20px;
@@ -122,7 +121,7 @@ nav > .btn {
   align-items: flex-start;
   gap: 60px;
   padding: 340px 0px 10px;
-  margin: 10px auto   ;
+  margin: 10px auto;
   max-width: 70vw;
   font-weight: 500;
   line-height: 2.2;
@@ -130,25 +129,25 @@ nav > .btn {
 #des-title {
   font-size: 35px;
   line-height: 1.5;
- font-family: 'pacifico';
+  font-family: 'pacifico';
 }
-.mid>section{
-display: flex;
-flex-direction: column;
-gap: 30px;
+.mid > section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .mid-img {
   height: 350px;
   width: auto;
-  border-radius:15px;
+  border-radius: 15px;
 }
 
 #menu {
- 
+  margin-top: 60px;
   background-color: #cdd6d03b;
   font-family: system-ui, sans-serif;
-  padding: 25px 20px;
+  padding: 0 100px;
 }
 
 .menu-name {
@@ -160,12 +159,12 @@ gap: 30px;
   position: relative;
   width: 15rem;
   border-radius: 50%;
-  transition: 0.2s ease-in-out;  
+  transition: 0.2s ease-in-out;
 }
 
 .pizza:hover {
   transform: scale(1.05) rotate(40deg);
-} 
+}
 
 .menu-flex {
   display: flex;
@@ -173,17 +172,16 @@ gap: 30px;
   align-items: center;
   text-align: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
-.pizza_card{
+.pizza_card {
   border-radius: 20px;
+ 
   padding: 10px;
+  width: calc(33.2% - 40px);
   height: 70vh;
-  width: 100vw;
-/*   box-shadow: 3px 6px 4px #e2e2e2; */
-box-shadow: 3px -6px 10px #e2e2e2, 
--3px 6px 5px  #e2e2e2, 
-3px 6px 5px  #e2e2e2, 
--3px -6px 5px  #e2e2e2;
+  box-shadow: 3px -6px 10px #e2e2e2, -3px 6px 5px #e2e2e2, 3px 6px 5px #e2e2e2,
+    -3px -6px 5px #e2e2e2;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -230,28 +228,109 @@ footer {
   bottom: 15px;
   display: none;
 }
-#card-btns{
-  margin-top: 20px;  
+#card-btns {
+  margin-top: 20px;
   display: flex;
   gap: 20px;
   justify-content: center;
-
 }
-#card-btns>input{
+#card-btns > input {
   border-radius: 12px;
 }
 
-
-.pizza-des{
+.pizza-des {
   height: 100px;
 }
-.hidden{
+.hidden {
   display: none;
-
 }
-.wlcm{
+.wlcm {
   font-family: 'pacifico';
   font-weight: 200;
   text-align: center;
-  margin: 10px 0px 20px; 
+  margin: 10px 0px 20px;
+} 
+img.pizza {
+  max-width: 100%;
 }
+/* Existing CSS code */
+
+@media (max-width: 768px) {
+  .mid {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0 10px;
+  }
+
+  .mid-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pizza_card {
+    width: calc(50% - 20px);
+  }
+
+  #card-btns {
+    width: 50%;
+  }
+
+  .btn {
+    padding: 12px 20px;
+  }
+
+  .caption1 {
+    font-size: 40px;
+    margin: 60px 0 20px;
+  }
+
+  .caption2 {
+    font-size: 45px;
+  }
+
+  .menu-name {
+    font-size: 25px;
+  }
+
+  .pizza-des {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mid {
+    padding: 30px 0 10px;
+  }
+
+  .pizza_card {
+    width: 100%;
+  }
+
+  #card-btns {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .caption1 {
+    font-size: 35px;
+    margin: 40px 0 10px;
+  }
+
+  .caption2 {
+    font-size: 40px;
+  }
+
+  .menu-name {
+    font-size: 20px;
+  }
+
+  .pizza-des {
+    font-size: 14px;
+  }
+}
+
+/* Your existing CSS continues below */
