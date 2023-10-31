@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'open_sans';
+  src: url(./font1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'sevillana';
+  src: url(./font2.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'signika';
+  src: url(./font3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url(./font4.ttf) format('truetype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  --primary-color: #ffd622;
+}
+
+body {
+  background-image: url(pizza-pepperoni-on-the-table.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'open_sans', sans-serif;
+  max-height: 100vh;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 13vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-weight: bolder;
+  font-size: 17px;
+  background-color: rgba(36, 36, 36, 0.61);
+  border-bottom: 3px ridge #ff0000a6;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.8s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo {
+  max-width: 100px;
+  padding-left: 15px;
+  height: 11vh;
+  background-image: url(./—Pngtree—pizza\ location\ logo_8902732.png);
+}
+.info {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+  margin-left: 90px;
+}
+.captions {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Sevillana', cursive;
+}
+
+.caption1 {
+  font-size: 50px;
+  font-weight: inherit;
+  padding: 0;
+  margin: 180px 0px 20px;
+}
+
+.caption2 {
+  font-size: 55px;
+  font-weight: inherit;
+}
+
+.divider {
+  border-bottom: 3px solid #ff0000ab;
+  margin: 0 250px;
+}
+
+.click {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+
+nav > .btn {
+  margin: 0px 25px 0px;
+}
+.btn {
+  color: #ff0000ab;
+  background-color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: var(--primary-color);
+  background-color: rgba(44, 44, 44, 0.4);
+}
+
+.mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 340px 0px 10px;
+  margin: 10px auto;
+  max-width: 70vw;
+  font-weight: 500;
+  line-height: 2.2;
+}
+#des-title {
+  font-size: 35px;
+  line-height: 1.5;
+  font-family: 'pacifico';
+}
+.mid > section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mid-img {
+  height: 350px;
+  width: auto;
+  border-radius: 15px;
+}
+
+#menu {
+  margin-top: 60px;
+  background-color: #cdd6d03b;
+  font-family: system-ui, sans-serif;
+  padding: 0 100px;
+}
+
+.menu-name {
+  text-align: center;
+  padding: 25px 0;
+  text-decoration: underline;
+}
+.pizza {
+  position: relative;
+  width: 15rem;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.pizza:hover {
+  transform: scale(1.05) rotate(40deg);
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.pizza_card {
+  border-radius: 20px;
+
+  padding: 10px;
+  width: calc(33.2% - 40px);
+  height: 70vh;
+  box-shadow: 3px -6px 10px #e2e2e2, -3px 6px 5px #e2e2e2, 3px 6px 5px #e2e2e2,
+    -3px -6px 5px #e2e2e2;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(228, 228, 228, 0.801);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 153, 0, 0.842);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(233, 72, 72, 0.87);
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.user-contact {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 35px;
+  list-style: none;
+}
+.user-contact a {
+  color: slategrey;
+}
+.ft-center {
+  color: slategray;
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(32, 32, 32);
+  padding: 5px;
+}
+.takeup {
+  font-size: 3.2em;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.GoTop {
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  display: none;
+}
+#card-btns {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#card-btns > input {
+  border-radius: 12px;
+}
+
+.pizza-des {
+  height: 100px;
+}
+.hidden {
+  display: none;
+}
+.wlcm {
+  font-family: 'pacifico';
+  font-weight: 200;
+  text-align: center;
+  margin: 10px 0px 20px;
+}
+img.pizza {
+  max-width: 100%;
+}
