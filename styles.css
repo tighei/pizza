@@ -101,6 +101,7 @@ nav > .btn {
   color: #ff0000ab;
   background-color: var(--primary-color);
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size: large;
   border: none;
   border-radius: 20px;
@@ -213,7 +214,7 @@ nav > .btn {
   text-align: center;
 }
 
-footer {
+#contact {
   background-color: rgb(32, 32, 32);
   padding: 5px;
 }
